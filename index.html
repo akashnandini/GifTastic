@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>GifTastic</title>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- link to jQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12" id="buttons-view"></div>
+      </div>
+      <div class="row">
+          <div class="col-md-9 gifs" id="animals-view"></div>
+          <div class="col-md-3 animal_input_css" id="input-view">
+            <form id="animal-form">
+                <label for="animal-input">Add an Animal</label>
+                <input type="text" id="animal-input">
+                <br>
+            
+                <!-- Button triggers new animal to be added -->
+                <input id="add-animal" type="submit" value="Submit">
+            </form>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- link to JS file -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
