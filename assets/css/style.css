@@ -27,7 +27,8 @@ body{
 }
 
 .rating{
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 15px;
     
 
 }

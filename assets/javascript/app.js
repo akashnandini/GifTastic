@@ -90,11 +90,11 @@ function renderButtons() {
   });
 
   // Adding a click event listener to all elements with a class of "animal-btn"
-  //$(document).ready(function() {
+ 
   $(document).on("click", ".animal-btn", displayAnimalInfo);
-  //$(".images").on("click", function() {
+ 
   $(document).on("click", ".images", animate);
- // $(".animal-btn").on("click",)
+ 
 
   // Calling the renderButtons function to display the intial buttons
   renderButtons();
