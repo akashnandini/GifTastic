@@ -31,7 +31,7 @@
             div.append(p,image);
             console.log("response.data[i].images.fixed_height_still.url=="+response.data[i].images.fixed_height_still.url);
             console.log("response.data[i].images.fixed_height.url=="+response.data[i].images.fixed_height.url);
-            //  div.append(image);
+            
             image.attr("src", response.data[i].images.fixed_height_still.url);            
             image.attr("data-still", response.data[i].images.fixed_height_still.url);
             image.attr("data-animate", response.data[i].images.fixed_height.url);
