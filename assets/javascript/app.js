@@ -35,7 +35,7 @@
             image.attr("src", response.data[i].images.fixed_height_still.url);            
             image.attr("data-still", response.data[i].images.fixed_height_still.url);
             image.attr("data-animate", response.data[i].images.fixed_height.url);
-            image.attr("data-state", response.data[i].images.fixed_height_still.url);
+            image.attr("data-state", "still");
             
             
             $("#animals-view").prepend(div) ;
@@ -46,9 +46,9 @@
 
 
 function animate(){
-    var animate = $(this).attr("data-state");
-    console.log(animate);
-    if(animate==="still"){
+    var animate_img = $(this).attr("data-state");
+    console.log(animate_img);
+    if(animate_img==="still"){
         $(this).attr("src",$(this).attr("data-animate"));
         $(this).attr("data-state","animate");
       }
@@ -94,6 +94,8 @@ function renderButtons() {
   $(document).on("click", ".animal-btn", displayAnimalInfo);
  
   $(document).on("click", ".images", animate);
+  
+ 
  
 
   // Calling the renderButtons function to display the intial buttons
