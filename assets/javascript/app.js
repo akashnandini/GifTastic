@@ -1,6 +1,6 @@
 
  // Initial array of movies
- var topics = ["Tiger", "Lion", "Cat", "Dog"];
+ var topics = ["Tiger", "Lion", "Cat", "Dog" ,"Elephant" , "Rat"];
 
  // displayAnimalInfo function re-renders the HTML to display the appropriate content
  function displayAnimalInfo() {
@@ -84,6 +84,7 @@ function renderButtons() {
 
     // Adding animal from the textbox to our array
     topics.push(animal);
+    
 
     // Calling renderButtons which handles the processing of our animal array
     renderButtons();

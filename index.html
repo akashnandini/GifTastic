@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <title>GifTastic</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -20,14 +20,14 @@
       </div>
       <div class="row">
           <div class="col-md-9 animal_gifs" id="animals-view"></div>
-          <div class="col-md-3 animal_input_css" id="input-view">
+          <div class="col-md-3 animal_input_css form-group" id="input-view">
             <form id="animal-form">
-                <label for="animal-input">Add an Animal</label>
-                <input type="text" id="animal-input">
-                <br>
+                <label for="animal-input" class="label">Add an Animal</label>
+                <input type="text" id="animal-input" class="form-control">
+                
             
-                <!-- Button triggers new animal to be added -->
-                <input id="add-animal" type="submit" value="Submit">
+                <!-- Button triggers new animal to be added -->                
+                <input class="btn btn-primary" type="submit" value="Submit" id="add-animal">
             </form>
           </div>
       </div>
