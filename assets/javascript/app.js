@@ -1,8 +1,6 @@
-
- // Initial array of movies
+ // Initial array of animals
  var topics = ["Tiger", "Lion", "Cat", "Dog" ,"Elephant" , "Rat", "Skunk" ,"Rabbit" ,"Snake" ,"Zebra" ,"Horse" ,"Deer"];
- //var topics_lower = topics.toLowercase();
- //console.log(topics_lower)
+ 
  // displayAnimalInfo function re-renders the HTML to display the appropriate content
  function displayAnimalInfo() {
 
