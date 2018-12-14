@@ -28,21 +28,21 @@ body{
     border-radius: 6px;
     
 }
-  /* mouse over link */
-  .animal-btn:hover {
-    background-color: rgb(7, 66, 66);
-  }
-  
-  
-  /* selected link */
-  .animal-btn:active {
-    background-color: rgb(7, 66, 66);
-  }
+/* mouse over link */
+.animal-btn:hover {
+background-color: rgb(7, 66, 66);
+}
 
-  .animal-btn:visited {
-    background-color: rgb(7, 66, 66);
-  }
- 
+
+/* selected link */
+.animal-btn:active {
+background-color: rgb(7, 66, 66);
+}
+
+.animal-btn:visited {
+background-color: rgb(7, 66, 66);
+}
+
 
 .label{
     font-weight: bold;

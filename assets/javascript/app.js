@@ -5,7 +5,6 @@
  function displayAnimalInfo() {
 
    var animal = $(this).attr("data-name");
-   //var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=9SnBtHSAb2LMsAcSDqaXyjm1dbr8eGke&q?q=" + animal + "&limit=10";
    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=9SnBtHSAb2LMsAcSDqaXyjm1dbr8eGke&q=" + animal + "&limit=10";
    console.log(queryURL);
    var len; 
@@ -81,10 +80,14 @@ function renderButtons() {
     var animal = $("#animal-input").val().trim();
 
     // Adding animal from the textbox to our array
-    if(animal!=""){   
-      if (topics.indexOf(animal) === -1) {
-        console.log("element doesn't exist");
-        topics.push(animal);
+    //Blank check
+    if(animal!=""){ 
+      //checking whether the first character is uppercase or not
+      var animal_uppercase =  animal.charAt(0).toUpperCase()+ animal.slice(1);;
+      console.log(animal_uppercase);
+      if (topics.indexOf(animal_uppercase) === -1) {
+        console.log("Element doesn't exist");
+        topics.push(animal_uppercase);
       }
       else{
         alert("Already there");
