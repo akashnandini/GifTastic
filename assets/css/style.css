@@ -5,7 +5,7 @@ body{
 }
 
   
-  .buttons-view {
+.buttons-view {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -15,13 +15,35 @@ body{
     background-color: rgb(26, 124, 124);
     margin-top: 10px;
 }
+.btn:hover {
+    background-color: rgb(7, 66, 66);
+  }
+
 .animal-btn{
     background-color: rgb(26, 124, 124);
     color:whitesmoke;
     margin-right: 5px;
     margin-top: 10px;
+    width:100px;
     
 }
+  /* mouse over link */
+  .animal-btn:hover {
+    background-color: rgb(7, 66, 66);
+  }
+  
+  
+  /* selected link */
+  .animal-btn:active {
+    background-color: rgb(7, 66, 66);
+  }
+
+  .animal-btn:visited {
+    background-color: rgb(7, 66, 66);
+  }
+  .animal-btn:link {
+    background-color: rgb(7, 66, 66);
+  }
 
 .label{
     font-weight: bold;

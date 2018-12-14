@@ -1,6 +1,6 @@
 
  // Initial array of movies
- var topics = ["Tiger", "Lion", "Cat", "Dog" ,"Elephant" , "Rat"];
+ var topics = ["Tiger", "Lion", "Cat", "Dog" ,"Elephant" , "Rat", "Skunk" ,"Rabbit" ,"Snake" ,"Zebra" ,"Horse" ,"Deer"];
 
  // displayAnimalInfo function re-renders the HTML to display the appropriate content
  function displayAnimalInfo() {
@@ -83,8 +83,20 @@ function renderButtons() {
     var animal = $("#animal-input").val().trim();
 
     // Adding animal from the textbox to our array
-    topics.push(animal);
-    
+    if(animal!=""){   
+      if (topics.indexOf(animal) === -1) {
+        console.log("element doesn't exist");
+        topics.push(animal);
+      }
+      else{
+        alert("Already there");
+      }
+      
+    }
+    else{
+      alert("Please add an animal");      
+    }
+   
 
     // Calling renderButtons which handles the processing of our animal array
     renderButtons();
