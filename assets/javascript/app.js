@@ -7,7 +7,6 @@
    var animal = $(this).attr("data-name");
    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=9SnBtHSAb2LMsAcSDqaXyjm1dbr8eGke&q=" + animal + "&limit=10";
    console.log(queryURL);
-   var len; 
    // Creating an AJAX call for the specific movie button being clicked
    $.ajax({
      url: queryURL,
@@ -83,14 +82,14 @@ function renderButtons() {
     //Blank check
     if(animal!=""){ 
       //checking whether the first character is uppercase or not
-      var animal_uppercase =  animal.charAt(0).toUpperCase()+ animal.slice(1);;
+      var animal_uppercase =  animal.charAt(0).toUpperCase()+ animal.slice(1).toLowerCase();
       console.log(animal_uppercase);
       if (topics.indexOf(animal_uppercase) === -1) {
         console.log("Element doesn't exist");
         topics.push(animal_uppercase);
       }
       else{
-        alert("Already there");
+        alert(animal_uppercase +" is already exists");
       }
       
     }
