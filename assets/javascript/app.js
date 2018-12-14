@@ -1,7 +1,8 @@
 
  // Initial array of movies
  var topics = ["Tiger", "Lion", "Cat", "Dog" ,"Elephant" , "Rat", "Skunk" ,"Rabbit" ,"Snake" ,"Zebra" ,"Horse" ,"Deer"];
-
+ //var topics_lower = topics.toLowercase();
+ //console.log(topics_lower)
  // displayAnimalInfo function re-renders the HTML to display the appropriate content
  function displayAnimalInfo() {
 
@@ -35,8 +36,7 @@
             image.attr("src", response.data[i].images.fixed_height_still.url);            
             image.attr("data-still", response.data[i].images.fixed_height_still.url);
             image.attr("data-animate", response.data[i].images.fixed_height.url);
-            image.attr("data-state", "still");
-            
+            image.attr("data-state", "still");            
             
             $("#animals-view").prepend(div) ;
           
@@ -106,10 +106,7 @@ function renderButtons() {
  
   $(document).on("click", ".animal-btn", displayAnimalInfo);
  
-  $(document).on("click", ".images", animate);
-  
- 
- 
+  $(document).on("click", ".images", animate); 
 
   // Calling the renderButtons function to display the intial buttons
   renderButtons();
