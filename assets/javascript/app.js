@@ -34,8 +34,7 @@
             image.attr("data-animate", response.data[i].images.fixed_height.url);
             image.attr("data-state", "still");            
             
-            $("#animals-view").prepend(div) ;
-          
+            $("#animals-view").prepend(div) ;          
         }
    });
  }
@@ -94,8 +93,7 @@ function renderButtons() {
     }
     else{
       alert("Please add an animal");      
-    }
-   
+    }   
 
     // Calling renderButtons which handles the processing of our animal array
     renderButtons();
