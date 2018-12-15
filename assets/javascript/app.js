@@ -3,7 +3,7 @@
  
  // displayAnimalInfo function re-renders the HTML to display the appropriate content
  function displayAnimalInfo() {
-
+  $("#alert").empty();
    var animal = $(this).attr("data-name");
    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=9SnBtHSAb2LMsAcSDqaXyjm1dbr8eGke&q=" + animal + "&limit=10";
    console.log(queryURL);
@@ -57,7 +57,7 @@ function animate(){
 function renderButtons() {
 
     $("#buttons-view").empty();
-
+    //$("#alert").empty();
     for (var i = 0; i < topics.length; i++) {
       var a = $("<button>");
       a.addClass("animal-btn");
@@ -73,6 +73,7 @@ function renderButtons() {
   // This function handles events where a animal button is clicked
   $("#add-animal").on("click", function(event) {
     $("#buttons-view").empty();
+    $("#alert").empty();
     event.preventDefault();
     // This line grabs the input from the textbox
     var animal = $("#animal-input").val().trim();
@@ -87,12 +88,11 @@ function renderButtons() {
         topics.push(animal_uppercase);
       }
       else{
-        alert(animal_uppercase +" is already exists");
-      }
-      
+        $("#alert").text(animal_uppercase +" is already exists");
+      }      
     }
     else{
-      alert("Please add an animal");      
+      $("#alert").text("Please add an animal");
     }   
 
     // Calling renderButtons which handles the processing of our animal array
