@@ -77,7 +77,6 @@ function renderButtons() {
     event.preventDefault();
     // This line grabs the input from the textbox
     var animal = $("#animal-input").val().trim();
-
     // Adding animal from the textbox to our array
     //Blank check
     if(animal!=""){ 
